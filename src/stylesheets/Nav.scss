@@ -1,0 +1,64 @@
+@import "./fontawesome-free-5.9.0-web/css/all.css";
+
+.nav {
+  border-right: 0;
+  margin-top: 20px;
+  margin-left: 20px;
+  position: absolute;
+
+  @media all and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 200px;
+    border-right: 1px solid #632c4f;
+  }
+}
+
+.nav.true {
+  display: none;
+}
+.nav .false {
+  display: block;
+}
+
+.nav_title {
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+
+  @media all and(min-width: 768px) {
+    font-size: 18px;
+  }
+
+  &:hover {
+    color: #dff68f;
+    cursor: pointer;
+    line-height: 20px;
+  }
+  &:hover .nav_icon {
+    border: 2px solid #dff68f;
+  }
+}
+
+.nav_icon {
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 2px solid#0B080A;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media all and(min-width: 768px) {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border: 2px solid#0B080A;
+  }
+}

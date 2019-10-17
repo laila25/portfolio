@@ -1,0 +1,49 @@
+@import "./fontawesome-free-5.9.0-web/css/all.css";
+
+.App_Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.title {
+  color: #632c4f;
+  font-weight: bold;
+  font-size: 25px;
+
+  @media all and(min-width: 768px) {
+    font-size: 35px;
+  }
+}
+
+.job {
+  font-size: 20px;
+}
+
+.img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 6px solid #632c4f;
+  margin-top: 20px;
+}
+
+.link {
+  margin-top: 40px;
+  color: #dff68f;
+  width: 150px;
+  text-align: center;
+  line-height: 25px;
+  background-color: #632c4f;
+  border-radius: 10px;
+  padding: 10px;
+
+  &:hover {
+    color: #632c4f;
+    background-color: #dff68f;
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
