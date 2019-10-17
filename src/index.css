@@ -4,18 +4,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background: rgb(16, 35, 38);
-  background: linear-gradient(
-    0deg,
-    rgba(16, 35, 38, 1) 0%,
-    rgba(88, 110, 88, 1) 48%,
-    rgba(223, 246, 143, 1) 100%
-  );
+  background-color: lightgrey;
   height: 100vh;
 }
 
 p {
-  font-size: 19px;
+  font-size: 18px;
   color: #0b080a;
 }
 

@@ -1,11 +1,26 @@
 @import "./fontawesome-free-5.9.0-web/css/all.css";
 
+.App_Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
 .App_Content {
+  margin-top: 200px;
+  background: rgb(255, 255, 255);
+  width: 800px;
+  border-radius: 10px;
+}
+
+.App_Main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  position: relative;
+  top: -120px;
 }
 
 .title {
@@ -14,36 +29,54 @@
   font-size: 25px;
 
   @media all and(min-width: 768px) {
-    font-size: 35px;
+    font-size: 30px;
   }
 }
 
 .job {
+  width: 95%;
+  text-align: center;
   font-size: 20px;
+  margin-top: -10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid lightgrey;
 }
 
 .img {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
-  border: 6px solid #632c4f;
   margin-top: 20px;
 }
 
-.link {
-  margin-top: 40px;
-  color: #dff68f;
-  width: 150px;
-  text-align: center;
-  line-height: 25px;
-  background-color: #632c4f;
-  border-radius: 10px;
-  padding: 10px;
+.section {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
 
-  &:hover {
-    color: #632c4f;
-    background-color: #dff68f;
-    cursor: pointer;
-    font-weight: bold;
-  }
+.link {
+  background-color: lightgrey;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.link_img {
+  width: 35px;
+  position: relative;
+  top: -20px;
+  right: 8px;
+}
+
+.link_title {
+  font-family: "Mansalva", cursive;
+  font-size: 20px;
+  position: relative;
+  top: -25px;
+  color: #632c4f;
+  transform: rotate(-10deg);
 }

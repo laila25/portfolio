@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import "../stylesheets/Home.scss";
 import foto from "../images/foto-perfil.jpg";
 import Nav from "./Nav";
+import SobreMi from "./SobreMi";
 
-class SobreMi extends React.Component {
+class Home extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -50,9 +51,10 @@ class SobreMi extends React.Component {
           onClick={this.showNav}
         ></i>
         <Nav class={!this.state.class} showNav={this.showNav} />
+        <SobreMi />
       </React.Fragment>
     );
   }
 }
 
-export default SobreMi;
+export default Home;
