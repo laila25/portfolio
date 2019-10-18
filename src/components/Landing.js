@@ -1,8 +1,6 @@
 import React from "react";
 import "../stylesheets/Landing.scss";
 import foto from "../images/foto-perfil.jpg";
-import fotoProyecto from "../images/codigo.jpg";
-import fotoFormacion from "../images/education.jpg";
 import chincheta from "../images/chincheta.png";
 
 import { Link } from "react-router-dom";
@@ -26,10 +24,36 @@ class Landing extends React.Component {
                 <img
                   src={chincheta}
                   className="link_img"
-                  alt="foto perfil"
-                  title="foto de Laura Sánchez"
+                  alt="chincheta"
+                  title="chincheta"
                 ></img>
-                <p className="link_title">EXPERIENCIA</p>
+                <p className="link_title">
+                  PROYECTOS<span> &#160;</span>
+                </p>
+              </Link>
+
+              <Link to="/home" className="link">
+                <img
+                  src={chincheta}
+                  className="link_img"
+                  alt="chincheta"
+                  title="chincheta"
+                ></img>
+                <p className="link_title">
+                  FORMACIÓN<span>&#160;</span>
+                </p>
+              </Link>
+
+              <Link to="/home" className="link">
+                <img
+                  src={chincheta}
+                  className="link_img"
+                  alt="chincheta"
+                  title="chincheta"
+                ></img>
+                <p className="link_title">
+                  EXPERIENCIA<span>&#160;</span>
+                </p>
               </Link>
             </section>
           </main>

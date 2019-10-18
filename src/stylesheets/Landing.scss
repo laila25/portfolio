@@ -8,10 +8,15 @@
 }
 
 .App_Content {
-  margin-top: 200px;
+  width: 90%;
+  margin-top: 120px;
   background: rgb(255, 255, 255);
-  width: 800px;
   border-radius: 10px;
+
+  @media all and(min-width: 768px) {
+    width: 800px;
+    margin-top: 200px;
+  }
 }
 
 .App_Main {
@@ -20,7 +25,11 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  top: -120px;
+  top: -100px;
+
+  @media all and(min-width: 768px) {
+    top: -120px;
+  }
 }
 
 .title {
@@ -43,16 +52,31 @@
 }
 
 .img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-top: 20px;
+
+  @media all and(min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .section {
-  width: 90%;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -80px;
+
+  @media all and(min-width: 768px) {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 
 .link {
@@ -63,6 +87,15 @@
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+  @media all and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
 }
 
 .link_img {
@@ -79,4 +112,22 @@
   top: -25px;
   color: #632c4f;
   transform: rotate(-10deg);
+
+  & span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: lightgrey;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) alternate;
+  }
+}
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
 }
