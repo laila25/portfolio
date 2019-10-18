@@ -1,9 +1,8 @@
 import React from "react";
 import "../stylesheets/Landing.scss";
 import foto from "../images/foto-perfil.jpg";
-import chincheta from "../images/chincheta.png";
-
-import { Link } from "react-router-dom";
+import Categories from "./Categories";
+import Contact from "./Contact";
 
 class Landing extends React.Component {
   render() {
@@ -19,43 +18,8 @@ class Landing extends React.Component {
             ></img>
             <h1 className="title">LAURA SÁNCHEZ MARTÍN</h1>
             <p className="job">Front-End Developer</p>
-            <section className="section">
-              <Link to="/home" className="link">
-                <img
-                  src={chincheta}
-                  className="link_img"
-                  alt="chincheta"
-                  title="chincheta"
-                ></img>
-                <p className="link_title">
-                  PROYECTOS<span> &#160;</span>
-                </p>
-              </Link>
-
-              <Link to="/home" className="link">
-                <img
-                  src={chincheta}
-                  className="link_img"
-                  alt="chincheta"
-                  title="chincheta"
-                ></img>
-                <p className="link_title">
-                  FORMACIÓN<span>&#160;</span>
-                </p>
-              </Link>
-
-              <Link to="/home" className="link">
-                <img
-                  src={chincheta}
-                  className="link_img"
-                  alt="chincheta"
-                  title="chincheta"
-                ></img>
-                <p className="link_title">
-                  EXPERIENCIA<span>&#160;</span>
-                </p>
-              </Link>
-            </section>
+            <Categories />
+            <Contact />
           </main>
         </div>
       </div>

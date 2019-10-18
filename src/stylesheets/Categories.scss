@@ -1,0 +1,82 @@
+.App_Categories {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -80px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightgrey;
+
+  @media all and(min-width: 768px) {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+.link {
+  background-color: lightgrey;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: all ease 1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  @media all and(min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+
+    &:hover .link_title {
+      font-size: 23px;
+    }
+  }
+}
+
+.link_img {
+  width: 35px;
+  position: relative;
+  top: -20px;
+  right: 8px;
+}
+
+.link_title {
+  font-family: "Mansalva", cursive;
+  font-size: 20px;
+  position: relative;
+  top: -25px;
+  color: #632c4f;
+  transform: rotate(-10deg);
+  transition: all ease 0.2s;
+  text-transform: uppercase;
+
+  & span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background: lightgrey;
+    border-left: 1px solid lightgrey;
+    animation: escribir 5s steps(30) alternate;
+  }
+}
+
+@keyframes escribir {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0;
+  }
+}

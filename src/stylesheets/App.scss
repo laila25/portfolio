@@ -1,0 +1,20 @@
+.Home_menu {
+  color: #632c4f;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 25px;
+
+  @media all and(min-width: 768px) {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+
+  &:hover {
+    cursor: pointer;
+    color: #dff68f;
+  }
+}
+
+.hidden {
+  display: none;
+}
